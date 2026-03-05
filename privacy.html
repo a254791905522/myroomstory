@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - My Room Story</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Nunito', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: #1a1a2e;
+            background-image:
+                radial-gradient(ellipse at 10% 20%, rgba(72, 149, 239, 0.12) 0%, transparent 50%),
+                radial-gradient(ellipse at 90% 80%, rgba(247, 127, 0, 0.1) 0%, transparent 50%),
+                radial-gradient(ellipse at 50% 50%, rgba(114, 9, 183, 0.08) 0%, transparent 60%);
+            min-height: 100vh;
+            color: rgba(255, 255, 255, 0.75);
+            line-height: 1.8;
+            padding: 0;
+        }
+
+        .header {
+            width: 100%;
+            padding: 50px 20px 40px;
+            text-align: center;
+            background: linear-gradient(180deg, #0f0f23 0%, #1a1a2e 100%);
+            position: relative;
+        }
+
+        .header::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background: linear-gradient(90deg, #4895ef, #a855f7);
+            border-radius: 3px;
+        }
+
+        .header-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(145deg, #4895ef, #7209b3);
+            border-radius: 22px;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 38px;
+            box-shadow: 0 12px 35px rgba(72, 149, 239, 0.3);
+        }
+
+        h1 {
+            color: #fff;
+            font-size: 2.4em;
+            font-weight: 900;
+            margin-bottom: 8px;
+        }
+
+        h1 span {
+            background: linear-gradient(135deg, #4895ef, #a855f7);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .header-sub {
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 1.05em;
+            font-weight: 600;
+        }
+
+        .updated {
+            color: rgba(255, 255, 255, 0.35);
+            font-size: 0.9em;
+            margin-top: 8px;
+        }
+
+        .container {
+            max-width: 820px;
+            margin: 0 auto;
+            padding: 40px 20px 60px;
+        }
+
+        .policy-card {
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 18px;
+            padding: 35px 35px;
+            margin-bottom: 24px;
+            backdrop-filter: blur(10px);
+            transition: border-color 0.3s ease;
+        }
+
+        .policy-card:hover {
+            border-color: rgba(72, 149, 239, 0.2);
+        }
+
+        .policy-card h2 {
+            color: #fff;
+            font-size: 1.3em;
+            font-weight: 800;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .policy-card h2 .num {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 32px;
+            height: 32px;
+            background: linear-gradient(135deg, #4895ef, #7209b3);
+            border-radius: 10px;
+            font-size: 0.75em;
+            font-weight: 800;
+            color: #fff;
+            flex-shrink: 0;
+        }
+
+        .policy-card p {
+            font-size: 1.02em;
+            margin-bottom: 14px;
+            color: rgba(255, 255, 255, 0.65);
+        }
+
+        .policy-card p:last-child {
+            margin-bottom: 0;
+        }
+
+        .policy-card ul {
+            margin: 12px 0;
+            padding-left: 24px;
+        }
+
+        .policy-card li {
+            margin: 10px 0;
+            font-size: 1em;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .policy-card li::marker {
+            color: #4895ef;
+        }
+
+        .policy-card strong {
+            color: rgba(255, 255, 255, 0.9);
+            font-weight: 700;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, rgba(72, 149, 239, 0.1), rgba(114, 9, 183, 0.08));
+            border: 1px solid rgba(72, 149, 239, 0.2);
+            border-radius: 14px;
+            padding: 20px 24px;
+            margin: 16px 0;
+        }
+
+        .highlight-box p {
+            color: rgba(255, 255, 255, 0.75);
+            margin: 0;
+        }
+
+        .contact-box {
+            background: linear-gradient(135deg, rgba(72, 149, 239, 0.12), rgba(114, 9, 183, 0.1));
+            border: 1px solid rgba(72, 149, 239, 0.25);
+            border-radius: 14px;
+            padding: 24px;
+            margin-top: 12px;
+        }
+
+        .contact-box a {
+            color: #4895ef;
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        .contact-box a:hover {
+            text-decoration: underline;
+            color: #6db3f8;
+        }
+
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: linear-gradient(135deg, #4895ef 0%, #7209b3 100%);
+            color: #fff;
+            padding: 14px 32px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 1em;
+            font-weight: 700;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 25px rgba(72, 149, 239, 0.35);
+            margin-top: 16px;
+        }
+
+        .back-btn:hover {
+            transform: translateY(-2px) scale(1.03);
+            box-shadow: 0 12px 35px rgba(72, 149, 239, 0.5);
+            text-decoration: none;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 30px 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.06);
+            color: rgba(255, 255, 255, 0.3);
+            font-size: 0.88em;
+        }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 1.8em; }
+            .policy-card { padding: 24px 20px; }
+            .header { padding: 35px 16px 30px; }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="header-icon">🏡</div>
+        <h1><span>Privacy Policy</span></h1>
+        <p class="header-sub">My Room Story — 3D Room Organizing Puzzle</p>
+        <p class="updated">Effective Date: March 2026</p>
+    </div>
+
+    <div class="container">
+        <div class="policy-card">
+            <h2><span class="num">1</span> Overview</h2>
+            <p>This Privacy Policy describes how <strong>My Room Story</strong> ("the App", "we", "us", or "our") handles information when you download and use our mobile application. We built My Room Story as a free-to-play puzzle game, and we respect your privacy. By using the App, you agree to the practices outlined in this document.</p>
+        </div>
+
+        <div class="policy-card">
+            <h2><span class="num">2</span> Data We Collect</h2>
+            <p>We are transparent about the limited data our App may access:</p>
+            <ul>
+                <li><strong>Device &amp; Platform Data:</strong> Basic technical identifiers such as OS version, device model, and screen resolution to ensure optimal display of 3D room environments across all supported devices.</li>
+                <li><strong>Gameplay Analytics:</strong> Anonymous statistics including levels completed, power-ups used, session length, and room themes played to help us improve game balance and design new content.</li>
+                <li><strong>Performance Logs:</strong> Crash reports, frame rate metrics, and error traces collected automatically to diagnose rendering issues and maintain stability.</li>
+            </ul>
+            <div class="highlight-box">
+                <p><strong>We do not collect</strong> personal identifiers such as your real name, email address, physical address, or phone number unless you voluntarily reach out to us for support.</p>
+            </div>
+        </div>
+
+        <div class="policy-card">
+            <h2><span class="num">3</span> Purpose of Data Usage</h2>
+            <p>Any data we process serves strictly limited purposes:</p>
+            <ul>
+                <li><strong>Game Delivery:</strong> Ensuring rooms render correctly, objects snap properly, and power-ups function as designed on your device.</li>
+                <li><strong>Content Improvement:</strong> Understanding which room themes and difficulty levels resonate most with players to guide future development.</li>
+                <li><strong>Stability &amp; Fixes:</strong> Identifying and resolving crashes, visual glitches, or performance bottlenecks in 3D rendering.</li>
+                <li><strong>Feature Development:</strong> Informing decisions about new room themes, power-ups, and gameplay mechanics based on aggregate usage patterns.</li>
+            </ul>
+        </div>
+
+        <div class="policy-card">
+            <h2><span class="num">4</span> Data Sharing</h2>
+            <p>We value your trust and maintain strict boundaries around data sharing:</p>
+            <ul>
+                <li><strong>No Sale of Data:</strong> We never sell, license, or rent your data to advertisers, data brokers, or any third party.</li>
+                <li><strong>Service Partners:</strong> We may engage trusted analytics or hosting providers who process data on our behalf under strict confidentiality agreements.</li>
+                <li><strong>Legal Compliance:</strong> We may disclose information if required by applicable law, regulation, or valid legal process.</li>
+            </ul>
+        </div>
+
+        <div class="policy-card">
+            <h2><span class="num">5</span> Data Storage &amp; Security</h2>
+            <p>We implement industry-standard safeguards to protect your data:</p>
+            <ul>
+                <li>Transport-layer encryption (TLS) for all network communication</li>
+                <li>Secure cloud infrastructure with access-controlled environments</li>
+                <li>Regular vulnerability assessments and security audits</li>
+                <li>Data minimization — we only store what is necessary and purge data that is no longer needed</li>
+            </ul>
+            <p>While we take all reasonable precautions, no system is completely immune to breaches. We encourage you to keep your device software up to date.</p>
+        </div>
+
+        <div class="policy-card">
+            <h2><span class="num">6</span> Children's Privacy</h2>
+            <p>My Room Story is rated <strong>4+</strong> and is designed to be family-friendly. We do not knowingly collect personal data from children under the age of 13 (or the equivalent minimum age in your jurisdiction). If a parent or guardian discovers that a child has provided personal data without consent, please contact us and we will promptly remove such information.</p>
+        </div>
+
+        <div class="policy-card">
+            <h2><span class="num">7</span> Third-Party Services</h2>
+            <p>The App may integrate third-party SDKs or link to external services (e.g., the Apple App Store). Each third party operates under its own privacy policy, and we recommend reviewing those policies independently. We are not responsible for the data practices of external parties.</p>
+        </div>
+
+        <div class="policy-card">
+            <h2><span class="num">8</span> Your Privacy Rights</h2>
+            <p>Depending on your location and applicable regulations (including GDPR, CCPA, and similar frameworks), you may have the right to:</p>
+            <ul>
+                <li>Request access to the data we hold about you</li>
+                <li>Request correction of inaccurate data</li>
+                <li>Request deletion or restriction of your data</li>
+                <li>Object to or opt out of certain data processing activities</li>
+                <li>Receive your data in a portable format</li>
+            </ul>
+            <p>To exercise any of these rights, please reach out using the contact details below. We will respond within the timeframe required by applicable law.</p>
+        </div>
+
+        <div class="policy-card">
+            <h2><span class="num">9</span> Data Retention</h2>
+            <p>We retain collected data only for as long as it serves the purposes described above. Aggregated and anonymized analytics may be kept indefinitely for trend analysis. When data is no longer required, it is securely deleted or irreversibly anonymized.</p>
+        </div>
+
+        <div class="policy-card">
+            <h2><span class="num">10</span> Policy Changes</h2>
+            <p>We may revise this Privacy Policy periodically to reflect changes in our practices, technology, or legal requirements. When material changes are made, we will update the "Effective Date" at the top of this page. Continued use of the App after changes are posted constitutes acceptance of the revised policy.</p>
+        </div>
+
+        <div class="policy-card">
+            <h2><span class="num">11</span> Contact Us</h2>
+            <p>For questions, concerns, or data-related requests regarding this Privacy Policy, please get in touch:</p>
+            <div class="contact-box">
+                <p><strong>Email:</strong> <a href="mailto:a254791905522@gmail.com">a254791905522@gmail.com</a></p>
+            </div>
+            <p>We aim to respond to all inquiries within a reasonable timeframe.</p>
+        </div>
+
+        <div style="text-align:center; margin-top: 30px;">
+            <a href="/index.html" class="back-btn">&#8592; Back to Home</a>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2026 My Room Story. All rights reserved.</p>
+    </div>
+</body>
+
+</html>
